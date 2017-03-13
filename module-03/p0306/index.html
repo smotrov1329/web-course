@@ -16,15 +16,15 @@
             <table>
                 <tr>
                     <td><label for="fullname">ФИО</label></td>
-                    <td><input type="text" name="fullname" value="" id="fullname" /></td>
+                    <td><input type="text" name="fullname" value="" id="fullname" required="true" /></td>
                 </tr>
                 <tr>
                     <td><label for="fullname">Email</label></td>
-                    <td><input type="email" name="email" value="" id="email" /></td>
+                    <td><input type="email" name="email" value="" id="email" required="true" pattern="[a-zA-Z0-9]+\@[a-zA-Z0-9]+.\[a-zA-Z0-9]" /></td>
                 </tr>
                 <tr>
                     <td><label for="phone">Номер телефона</label></td>
-                    <td><input type="tel" name="phone" value="" id="phone" /></td>
+                    <td><input type="tel" name="phone" value="" id="phone" required="true" pattern="\(\d{3,4}\) \d{2,3}-\d{2}-\d{2}" placeholder="(000) 123-45-67" /></td>
                 </tr>
                 <tr>
                     <td><label for="dateofbirth">Дата рождения</label></td>
