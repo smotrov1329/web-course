@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Audio Demo</title>
+    <meta charset="utf-8">
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/main.css"> </head>
+
+<body onload="load();">
+    <header id="header">
+        <h1>Audio example</h1>
+    </header>
+    <section>
+        <div>
+            <div id="albums">
+                <form id="albumform">
+                    <fieldset>
+                        <legend class="singer">Albums</legend>
+                        <ul class="albumname">
+                            <li><a class="albumlink" onclick="loadAlbum('albums/nirvana.html');">Nirvana</a></li>
+                            <!--
+                            <li><a class="albumlink" onclick="loadAlbum('1997.html');">1997 This Could Be Heaven </a></li>
+                            -->
+                        </ul>
+                    </fieldset>
+                </form>
+            </div>
+            <div id="tracks"> <iframe id="target"></iframe> </div>
+        </div>
+
+        <div class="playlistpanel">
+            <ul id="playlist"> </ul>
+        </div>
+
+        <audio controls="controls" id="audio1"></audio>
+    </section>
+</body>
+
+</html>
